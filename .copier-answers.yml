@@ -1,0 +1,52 @@
+---
+## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v2.3.0
+_src_path: gh:kc-workspace/asdf-plugin-template.git
+addon_yaml:
+    archive: false
+    checksum: false
+    download: false
+    fetch: true
+    git: false
+    github: true
+    gpg: false
+    help: true
+    install: true
+    package: false
+    python: true
+    system: false
+    tags: true
+    version: false
+app_desc: an agentless automation tool that you install on a single host (referred
+    to as the control node).
+app_name: ansible-community
+app_repo: https://github.com/ansible-community/ansible-build-data
+app_type: python
+app_website: https://docs.ansible.com/
+custom_bin_paths: bin
+custom_non_stable_version: (-src|-dev|-latest|-stm|[-\.]rc|-alpha|-beta|[-\.]pre|-next|snapshot|master|a|b)
+custom_require_commands: python
+install_map_enabled: true
+install_map_method: link
+install_map_yaml:
+    venv/bin/ansible: bin/ansible
+    venv/bin/ansible-community: bin/ansible-community
+    venv/bin/ansible-config: bin/ansible-config
+    venv/bin/ansible-connection: bin/ansible-connection
+    venv/bin/ansible-console: bin/ansible-console
+    venv/bin/ansible-doc: bin/ansible-doc
+    venv/bin/ansible-galaxy: bin/ansible-galaxy
+    venv/bin/ansible-inventory: bin/ansible-inventory
+    venv/bin/ansible-playbook: bin/ansible-playbook
+    venv/bin/ansible-pull: bin/ansible-pull
+    venv/bin/ansible-test: bin/ansible-test
+    venv/bin/ansible-vault: bin/ansible-vault
+plugin_author: Kamontat Chantrachirathumrong
+plugin_name: asdf-ansible
+plugin_org: kc-workspace
+plugin_repo: https://github.com/kc-workspace/asdf-ansible.git
+python_name: ansible
+source_enabled: false
+test_cmd_args: --version
+version_file_enabled: false
+version_prefix: ''
